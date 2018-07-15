@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href='/css/styles.css' />
+</head>
+
+<body >
+    <div >
+        <h3>Staff details</h3>
+    </div>
+    <div >
+        <div>
+            <form id="user-Form" action='/userData' method='post'>
+                Name of staff:
+                <input name="name" id="staffname" type="text" placeholder="staffname" autofocus autocomplete="off"
+                    required/> Hourly rate: $
+                <input name="rate" id="rate" type="text" placeholder="hourly rate " autofocus autocomplete="off"
+                    required/>
+                <p>&nbsp;</p>
+                <fieldset id='days'>
+                    <legend>Choose days and number of hours for job</legend>
+                    <div class='monday'>
+                        monday
+                        <input type="text" id="monday" name="monday" placeholder="hours" value=0>
+                        <label for="monday">Hours</label>
+
+                    </div>
+                    <div class='tuesday'>
+                        tuesday
+                        <input type="text" id="tuesday" name="tuesday" placeholder="0" value=0>
+                        <label for="tuesday">Hours</label>
+
+                    </div>
+                    <div class='wednesday'>
+                        wednesday
+                        <input type="text" id="wednesday" name="wednesday" placeholder="hours" value=0>
+                        <label for="wednesday">Hours</label>
+
+                    </div>
+                    <div class='thursday'>
+                        thursday
+                        <input type="text" id="thursday" name="thursday" placeholder="hours" value=0>
+                        <label for="thursday">Hours</label>
+
+                    </div>
+                    <div class='friday'>
+                        friday
+                        <input type="text" id="friday" name="friday" placeholder="hours" value=0>
+                        <label for="friday">Hours</label>
+
+                    </div>
+                    <div class='saturday'>
+                        saturday
+                        <input type="text" id="saturday" name="saturday" placeholder="hours" value=0>
+                        <label for="saturday">Hours</label>
+
+                    </div>
+                    <div class='sunday'>
+                        sunday
+                        <input type="text" id="sunday" name="sunday" placeholder="hours" value=0>
+                        <label for="sunday">Hours</label>
+                    </div>
+                </fieldset>
+                <p>&nbsp;</p>
+
+                <button>Calculate</button>
+                <p>&nbsp;</p>
+
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
